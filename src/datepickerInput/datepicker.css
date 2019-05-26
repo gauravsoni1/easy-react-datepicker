@@ -1,0 +1,74 @@
+.datepicker-container{
+  width: 250px;
+  padding: 5px;
+  background-color: white;
+}
+
+.action-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.action-row label{
+  margin-left: 15px;
+}
+
+.action-row .before-after-button:hover , .before-after-button:hover{
+  cursor: pointer;
+}
+
+.action-row .calendar-buttons{
+  display: flex;
+}
+
+.action-row .calendar-buttons div{
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
+.calendar-body{
+  display: table;
+  width: 100%;
+}
+
+.calendar-days, .calendar-dates{
+  display: table-row;
+  text-align: center;
+}
+
+.calendar-days span, .calendar-dates span{
+  display: table-cell;
+  padding: 5px 0;
+  height: 25px;
+  font-size: 12px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.calendar-days span{
+  font-weight: bold;
+}
+
+span.not-current-month{
+  color: grey;
+}
+
+span.today{
+  background: rgb(64, 64, 247);
+  color: white;
+  border-radius: 50%
+}
+
+span.selected-date{
+  background: rgb(247, 159, 64);
+  color: white;
+  border-radius: 50%
+}
+
+.calendar-dates span:hover{
+  background: rgba(71, 71, 242, 0.619);
+  border-radius: 50%; 
+}
