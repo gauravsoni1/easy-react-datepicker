@@ -22,6 +22,10 @@ import DatePicker from 'easy-react-datepicker'
 <DatePicker name="date" selectedDate={new Date(this.state.event.eventDate)}/>
 ```
 
+## Example
+
+[![View Sample](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/charming-dew-izk1v?fontsize=14)
+
 ## Properties
 
 | Property        | Default           | Description|
