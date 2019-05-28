@@ -20,6 +20,7 @@ class DatepickerInput extends Component {
     document.removeEventListener('click',this);
   }
 
+  //Used to hide the datepicker if the mouse is clicked else where
   mouseClickListener = (e)=>{
     if(!e.target.closest('.datepicker-container') && !e.target.closest('.datepicker-input')){
       this.setState({showPicker:false});
@@ -39,12 +40,15 @@ class DatepickerInput extends Component {
     element:React.createRef(),
     name:null
   };
+
+  //Toggle the datepicker view when clicking on the input box
   togglePicker = () => {
     this.setState((prevState)=>{
       return({showPicker:!prevState.showPicker})
     })
   };
 
+  //Function called when the date is selected
   dateSelected = (date) =>{
     this.togglePicker();
     this.setState({selectedDate:date});

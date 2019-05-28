@@ -1,7 +1,7 @@
 {
   "name": "easy-react-datepicker",
   "version": "1.0.0",
-  "description": "easy-react-datepicker React component",
+  "description": "Date picker component for React",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -32,8 +32,9 @@
   },
   "author": "Gaurav soni",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/gauravsoni1/easy-react-datepicker.git",
+  "bugs":"https://github.com/gauravsoni1/easy-react-datepicker/issues",
   "keywords": [
-    "react-component"
+    "react datepicker"
   ]
 }

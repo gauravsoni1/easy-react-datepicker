@@ -1,16 +1,35 @@
-# easy-react-datepicker
+# Easy-React-Datepicker
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+Reusable React Datepicker component
 
-Describe easy-react-datepicker here.
+### Installing
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+Simply install using 
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+```
+npm install easy-react-datepicker --save
+```
+This will install the component in your project and add the reference to your package.json
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+
+## Usage
+
+```
+//Import using
+import DatePicker from 'easy-react-datepicker'
+
+//Use the Datepicker as follows
+<DatePicker name="date" selectedDate={new Date(this.state.event.eventDate)}/>
+```
+
+## Properties
+
+| Property        | Default           | Description|
+| ------------- |:-------------:| -----:|
+| selectedDate      | currentDate | The date that is currently selected |
+| name      | null      |  Use the name property if using the datepicker in a form, can be used to retrive the value of datepicker  |
+
+
+## Note
+
+1. The default date need to be passed in the Javascript Date format
