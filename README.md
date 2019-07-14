@@ -18,8 +18,19 @@ This will install the component in your project and add the reference to your pa
 //Import using
 import DatePicker from 'easy-react-datepicker'
 
+state = {
+  selectedDate:new Date(),
+  dateFormat: 'dddd'
+}
+
 //Use the Datepicker as follows
-<DatePicker name="date" selectedDate={new Date(this.state.event.eventDate)}/>
+render() {
+  return (
+    <div>
+      <DatePicker selectedDate={new Date(this.state.selectedDate)} />
+    </div>
+  );
+}
 ```
 
 ## Example
@@ -31,8 +42,16 @@ import DatePicker from 'easy-react-datepicker'
 
 | Property        | Default           | Description|
 | ------------- |:-------------:| -----:|
-| selectedDate      | currentDate | The date that is currently selected |
+| selectedDate      | currentDate | Set the default date|
 | name      | null      |  Use the name property if using the datepicker in a form, can be used to retrive the value of datepicker  |
+| dateFormat      | DD/MM/YYYY     |  Set the format of the date in the datepicker input box, refer [MomentJS Date Formating](https://momentjs.com/docs/#/displaying/format/)|
+
+## Handlers
+
+| Event        | Description           | Param|
+| ------------- |:-------------:| -----:|
+| dateSelected      |   Called when a new date is selected | Returns the date selected of type Date | 
+
 
 
 ## Note

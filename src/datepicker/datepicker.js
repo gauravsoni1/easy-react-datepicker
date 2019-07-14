@@ -28,6 +28,10 @@ class DatePicker extends Component {
     this.setState({ selectedMonth: updatedMonth });
   };
 
+  today = () =>{
+    this.setState({selectedMonth:moment()});
+  }
+
   updateSelectedDate = day => {
     this.setState({ selectedDate: day });
     if (typeof this.props.dateSelected === "function") {
@@ -92,6 +96,7 @@ class DatePicker extends Component {
           selectedMonth={selectedMonth}
           previousMonth={this.previousMonth}
           nextMonth={this.nextMonth}
+          today={this.today}
         />
         <div className="calendar-body">
           <Days />
